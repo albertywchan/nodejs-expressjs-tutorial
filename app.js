@@ -1,7 +1,12 @@
-const { createReadStream } = require('fs');
+const express = require("express");
+const app = express();
 
-const stream = createReadStream('./content/big.txt');
+const {products, people} = require('./data.js');
 
-stream.on('data', (res) => {
-    console.log(res);
-})
+app.get("/", (req, res) => {
+  res.json(products);
+});
+
+app.listen(5000, () => {
+  console.log("Server is listening on port 5000...");
+});

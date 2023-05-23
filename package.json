@@ -1,19 +1,18 @@
 {
-  "name": "nodejs-tutorial",
+  "name": "2-express-tutorial",
   "version": "1.0.0",
   "description": "",
-  "main": "01-intro.js",
+  "main": "app.js",
   "scripts": {
-    "start": "node app.js",
-    "dev": "nodemon app.js"
+    "start": "nodemon app.js"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "lodash": "^4.17.21"
+    "express": "^4.17.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.22"
+    "nodemon": "^2.0.7"
   }
 }
